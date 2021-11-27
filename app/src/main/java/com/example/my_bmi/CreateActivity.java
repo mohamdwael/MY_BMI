@@ -1,27 +1,32 @@
 package com.example.my_bmi;
 
+
 import androidx.appcompat.app.AppCompatActivity;
+
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
 
-public class LoginActivity extends AppCompatActivity {
-    TextView go_to_sign_up;
+
+import java.util.ArrayList;
+public class CreateActivity extends AppCompatActivity {
+    Button btn_save_data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        go_to_sign_up = findViewById(R.id.go_to_sign_up);
+        setContentView(R.layout.activity_create);
 
-        go_to_sign_up.setOnClickListener(new View.OnClickListener() {
+        btn_save_data.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                Intent intent = new Intent(CreateActivity.this, HomeActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
+
+
     }
 }
