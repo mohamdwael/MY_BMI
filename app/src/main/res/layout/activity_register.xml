@@ -17,8 +17,16 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         tools:ignore="MissingConstraints"
-        />
-
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Analyzer"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,6 +49,7 @@
 
 
     <EditText
+        android:id="@+id/ed_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Name"
@@ -52,6 +61,7 @@
         />
 
     <EditText
+        android:id="@+id/ed_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="E-Mail"
@@ -63,6 +73,7 @@
         />
 
     <EditText
+        android:id="@+id/ed_password_sginup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -75,6 +86,7 @@
         />
 
     <EditText
+        android:id="@+id/ed_re_password_sginup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Re-Password"
@@ -86,6 +98,7 @@
         />
 
     <Button
+        android:id="@+id/create"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:text="CREATE"

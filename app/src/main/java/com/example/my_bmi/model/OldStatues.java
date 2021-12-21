@@ -1,14 +1,19 @@
 package com.example.my_bmi.model;
 
 public class OldStatues {
-    String dateOfB;
+    String date;
+    String time;
     String weight;
     String Length;
 
-    public OldStatues(String dateOfB, String weight, String length) {
-        this.dateOfB = dateOfB;
+    public OldStatues() {
+    }
+
+    public OldStatues(String weight, String length, String date, String time) {
+        this.date = date;
         this.weight = weight;
-        Length = length;
+        this.Length = length;
+        this.time = time;
     }
 
     public String getWeight() {
@@ -25,5 +30,21 @@ public class OldStatues {
 
     public void setLength(String length) {
         Length = length;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }

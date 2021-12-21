@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity"
+    tools:context=".CreateActivity"
     android:orientation="vertical"
     android:background="@drawable/shape_framework">
 
@@ -41,6 +41,62 @@
         android:layout_gravity="center"
         />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="12sp"
+                android:layout_marginEnd="6dp"
+                android:outlineAmbientShadowColor="@color/purple_700"
+                android:shadowColor="@color/purple_700"
+                android:textColor="@color/purple_700"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="12sp"
+                android:layout_marginStart="12dp"
+                android:outlineAmbientShadowColor="@color/purple_700"
+                android:shadowColor="@color/purple_700"
+                android:textColor="@color/purple_700"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

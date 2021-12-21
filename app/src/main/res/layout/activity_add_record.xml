@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddFoodDetailsActivity"
+    tools:context=".AddRecordActivity"
     android:orientation="vertical"
     android:background="@drawable/shape_framework">
 
@@ -31,7 +31,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Food Details"
+        android:text="New Record"
         android:textSize="28sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -51,17 +51,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text="Weight"
             android:textColor="@color/purple_700"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:gravity="center"
             android:layout_gravity="center"
             />
 
         <EditText
-            android:id="@+id/ed_name_food"
+            android:id="@+id/ed_weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -70,41 +71,22 @@
             android:textColor="@color/purple_700"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="4dp"
+            android:drawableEnd="@drawable/add"
+            android:drawableStart="@drawable/minus"
             style="@style/Widget.AppCompat.EditText"
             android:background="@drawable/shape_framework_ed"
             />
-
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_margin="16dp">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category"
+            android:text="kg"
             android:textColor="@color/purple_700"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginEnd="55dp"
             android:gravity="center"
             android:layout_gravity="center"
             />
 
 
-        <Spinner
-            android:id="@+id/spinner_category"
-            android:layout_width="149dp"
-            android:layout_height="25dp"
-            android:background="@drawable/shape_framework_ed"
-            style="@style/Widget.AppCompat.DropDownItem.Spinner"/>
-
-
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -116,64 +98,40 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calory"
+            android:text="Length"
             android:textColor="@color/purple_700"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
             android:gravity="center"
             android:layout_gravity="center"
             />
 
         <EditText
-            android:id="@+id/ed_calory"
+            android:id="@+id/ed_length"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="18sp"
-            android:ems="6"
+            android:ems="8"
+
             android:textColor="@color/purple_700"
+            android:layout_marginStart="30dp"
             android:layout_marginEnd="4dp"
+            android:drawableEnd="@drawable/add"
+            android:drawableStart="@drawable/minus"
             style="@style/Widget.AppCompat.EditText"
             android:background="@drawable/shape_framework_ed"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="cal / g"
+            android:text="cm"
             android:textColor="@color/purple_700"
             android:textSize="18sp"
             android:gravity="center"
             android:layout_gravity="center"
-            />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="start"
-        android:layout_margin="16dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Photo"
-            android:textColor="@color/purple_700"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            />
-
-        <ImageView
-            android:id="@+id/image_food"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_marginTop="6dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/th"
             />
 
     </LinearLayout>
@@ -181,39 +139,90 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_margin="16dp">
 
-        <Button
-            android:id="@+id/btn_upload_photo"
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:text="Upload Photo"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:gravity="center"
             android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/ed_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="18sp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="@color/purple_700"
-            android:textColor="@color/white"
             android:ems="10"
-            />
-
-        <Button
-            android:id="@+id/btn_save_food"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:text="Save"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="18sp"
-            android:layout_marginTop="10dp"
+            android:textColor="@color/purple_700"
             android:layout_marginStart="10dp"
-            android:backgroundTint="@color/purple_700"
-            android:textColor="@color/white"
-            android:ems="6"
+            android:layout_marginEnd="26dp"
+            android:padding="4dp"
+            style="@style/Widget.AppCompat.EditText"
+            android:background="@drawable/shape_framework_ed"
             />
-
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/ed_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:ems="10"
+            android:textColor="@color/purple_700"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="26dp"
+            android:padding="4dp"
+            style="@style/Widget.AppCompat.EditText"
+            android:background="@drawable/shape_framework_ed"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_save_data_record"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Save Data"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:ems="14"
+        />
+
 
 </LinearLayout>

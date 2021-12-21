@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddFoodDetailsActivity"
+    tools:context=".EditActivity"
     android:orientation="vertical"
     android:background="@drawable/shape_framework">
 
@@ -31,7 +31,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Food Details"
+        android:text="Edit Food Details"
         android:textSize="28sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -61,7 +61,7 @@
             />
 
         <EditText
-            android:id="@+id/ed_name_food"
+            android:id="@+id/ed_name_food_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -98,7 +98,7 @@
 
 
         <Spinner
-            android:id="@+id/spinner_category"
+            android:id="@+id/spinner_category_edit"
             android:layout_width="149dp"
             android:layout_height="25dp"
             android:background="@drawable/shape_framework_ed"
@@ -127,7 +127,7 @@
             />
 
         <EditText
-            android:id="@+id/ed_calory"
+            android:id="@+id/ed_calory_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -168,7 +168,7 @@
             />
 
         <ImageView
-            android:id="@+id/image_food"
+            android:id="@+id/image_food_edit"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
             android:layout_marginTop="6dp"
@@ -184,7 +184,7 @@
         android:gravity="center">
 
         <Button
-            android:id="@+id/btn_upload_photo"
+            android:id="@+id/btn_upload_photo_edit"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:text="Upload Photo"
@@ -199,7 +199,7 @@
             />
 
         <Button
-            android:id="@+id/btn_save_food"
+            android:id="@+id/btn_save_food_edit"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:text="Save"
